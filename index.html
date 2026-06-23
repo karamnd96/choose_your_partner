@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>A Little Game for You 💌</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="game-card">
+    <div class="hearts">♡ ♡ ♡</div>
+
+    <p id="progressText" class="progress-text">Question 1 of 8</p>
+
+    <div class="progress-track">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+
+    <section id="questionSection">
+      <h1 id="questionNumber">8 / 8</h1>
+
+      <label id="questionLabel" for="userInput">
+        👨‍🦰 What type of hair do you like in men?
+      </label>
+
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Write your answer here..."
+        autocomplete="off"
+      />
+
+      <p id="hintText" class="hint-text">
+        Be honest... this may affect your result 👀
+      </p>
+
+      <button id="nextButton" type="button">
+        Next ♡
+      </button>
+    </section>
+
+    <section id="resultSection" class="hidden">
+      <div class="result-icon">💌</div>
+      <h1>Your result is ready...</h1>
+
+      <p class="loading-message" id="loadingMessage">
+        Finding your perfect partner...
+      </p>
+
+      <div id="finalResult" class="hidden">
+        <h2>Congratulations!</h2>
+
+        <p>
+          After carefully analyzing all your answers...
+        </p>
+
+        <p class="big-reveal">
+          Your partner is me. ♡
+        </p>
+
+        <p>
+          So now the only question left is:
+        </p>
+
+        <p class="proposal-line">
+          Will you choose me too? 🌙
+        </p>
+
+        <button id="restartButton" type="button">
+          Play Again
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
